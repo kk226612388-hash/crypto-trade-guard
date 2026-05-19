@@ -1,1 +1,7 @@
-print("AI Shadow Trading System Booting...")
+from flask import Flask
+
+app = Flask(__name__)
+
+@app.route("/")
+def home():
+    return "AI Shadow Trading System Running"
